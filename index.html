@@ -1,4 +1,4 @@
-test
+Still in developement for a personal site.
 <!DOCTYPE html>
 <html>
 <head>
@@ -193,9 +193,36 @@ test
 
 <body>
     <div id="fontContentMainMenu">
-        <div style="background-color:green;color:white;padding:20px;"></div>
-        <div style="background-size: 100px 100px"></div>
-    </div>
+        <div style="background-color:aqua;color:white;padding:5px;"></div>
+        <div style="background-size: 256px 256px"></div>
+        <p id="myNextPage1Txt">Page 2</p>
+        <button id="clickPage1" class="buttonStyle4">Next Page</button
+        </div>
+        <script>
+        var myPage1 = document.getElementById("clickPage1");
+        var myNextPage1Txt = document.getElementById("myNextPage1Txt");
+        myPage1.addEventListener('click', nextPage, false)
+        function nextPage() {
+        myNextPage1Txt.textContent = "Next page.";
+        }
+        </script>
 </body>
+
+<!-- <body>
+<div id="fontContentContact">
+<p id="contactText">Click for contact informatin regarding the website.</p>
+<button id="clickButtonContact" class="buttonStyle">Contact Information</button>
+
+</div>
+
+<script>
+    var myContactButton = document.getElementById("clickButtonContact"); 
+    var myContactText = document.getElementById("contactText");
+    myContactButton.addEventListener('click', contactInformation , false)
+    function contactInformation() {
+	myContactText.textContent = " E-mail for support at john_jjoe@outlook.com for reports, issues, and questions. ";
+    }
+</script>   
+</body>-->
 <!-- -----------------------------------------------End------------------------------------------ -->
 </html>
